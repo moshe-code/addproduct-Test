@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <h1>Add Product</h1>
+
+                <hr>
+
+
+                <div class="input-group">
+                    <input type="text" class="form-control" id="candidate">
+                    <input type="number" class="form-control" id="price" placeholder="Price...">
+                    <select id="category">
+                        <option value="Drinks">Drinks</option>
+                        <option value="Meat">Meat</option>
+                        <option value="Dairy" selected>Dairy</option>
+                        <option value="Snacks">Snacks</option>
+                        <option value="Basic">Basic</option>
+                      </select>
+
+                    <div class="input-group-append">
+                        <button onclick="addItem()" class="btn btn-add" type="button">Add Product</button>
+                        <button onclick="removeItem()" class="btn btn-remove" type="button">Remove Product</button>
+
+                    </div>
+
+                </div>
+                
+                <ul id="dynamic-list"></ul>
+                <!-- <ul id="price-list"></ul> -->
+        
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<!-- <br>
+                    <input type="number" id="price">
+                    <br>
+
+                    <label for="category">Category:</label>
+                    <select id="category-list" form="">
+                        <option value="Drinks">Drinks</option>
+                        <option value="Meat">Meat</option>
+                        <option value="Dairy">Dairy</option>
+                        <option value="Snacks">Snacks</option>
+                        <option value="Basic">Basic</option>
+                    </select> -->
